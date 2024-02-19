@@ -9,7 +9,7 @@ const Contacts = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  const columns = [
+  const columnsContacts = [
     { field: "id", headerName: "ID", flex: 0.5 },
     { field: "registrarId", headerName: "Registrar Id"},
     { field: "name", headerName: "NAME", flex: 1, cellClassName:'name-column--cell'},
@@ -51,7 +51,7 @@ const Contacts = () => {
       }}>
         <DataGrid
         rows={mockDataContacts}
-        columns={columns} 
+        columns={columnsContacts} 
         components={{Toolbar: GridToolbar}}
         />
       </Box>

@@ -11,7 +11,7 @@ const Team = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  const columns = [
+  const columnsTeam = [
     { field: "id", headerName: "ID" },
     { field: "name", headerName: "NAME", flex: 1, cellClassName:'name-column--cell'},
     { field: "age", headerName: "AGE", type: Number, headerAlign:'left', align:'left' },
@@ -71,7 +71,7 @@ const Team = () => {
       }}>
         <DataGrid
         rows={mockDataTeam}
-        columns={columns} />
+        columns={columnsTeam} />
       </Box>
     </Box>
   );

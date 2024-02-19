@@ -9,7 +9,7 @@ const Invoices = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  const columns = [
+  const columnsInvoices = [
     { field: "id", headerName: "ID" },
     { field: "name", headerName: "NAME", flex: 1, cellClassName:'name-column--cell'},
     { field: "phone", headerName: "PHONE", flex: 1 },
@@ -55,7 +55,7 @@ const Invoices = () => {
         <DataGrid
         checkboxSelection
         rows={mockDataInvoices}
-        columns={columns} 
+        columns={columnsInvoices} 
         />
       </Box>
     </Box>
